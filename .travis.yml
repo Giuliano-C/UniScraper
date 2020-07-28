@@ -11,3 +11,6 @@ install:
 
 script:
   - coverage run -m unittest
+  
+notifications:
+  email: false
