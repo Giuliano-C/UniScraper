@@ -5,7 +5,7 @@
 # A simple web scraping tool for recipe sites.
 
 ```bash
-pip install recipe-scrapers
+pip install uni-scrapers
 ```
 
 then:
