@@ -13,5 +13,8 @@ deploy:
   username: __token__
   password:
     secure: veITr1B11xxbGA0fRbzVWbJ4afjBrG5ip1Bg3usyTTJM0FfYh28ow9VWEfEIwusdil8ArMYMPu31yvjjUmXRqzTBTc66N0WvafVc6/RHU591Tm+Rh8r1LvN/nAalAwL8KNJUPS5KV4StJzvZ8Z5Op90BCTKMNIxJ1tEMs7yi8Xvmp22SJHDd5fePvEr4f+ZqhcOmg+Ycdy4ZN9avrv7RZkvWDjpaWYd6x6Afv3YttgWSzVmux9YjPwDM7DdntstFCKULXHk5GXDZXih2QjVjL7rrrGB8JqD4iD20UslDyQ3BOZHeGwRQp27qemM45BMQSoJijAEArVj0huA+z0XQlHIMNy3KdencMdhuy49//F/1d3tTtk5U6CQl8vWyq76WaWdHlFGi0ZAC+DZPVfX4c5epe2739+dswrIz2AwKutl4wlTyAfTeusuVk/vUM78dBMLpw5NyABTY2tm1+18ylH9a1nUrD7Ir9uAsnm/3/Tgc52t+7xi40E6z+CurpRKfnO3FULEuy0IB4VSo/nNbl33agSb2bk6Ikcduoi7Z56ZxYd2w/1eau+lqo3Vp1+np1e8Puu0V9TswW0wj9pkyV6IFKRgQ5Tdkf/4Cn3apktABorpPBKlKsepOi8EkaE3dzbuw2CKrborSwnXuqrCeIJ9WzEEtsujEA9iVuiOi3j4=
+  skip_existing: true
+  on:
+    tags: true
 notifications:
   email: false
