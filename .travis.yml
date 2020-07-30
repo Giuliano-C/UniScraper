@@ -11,6 +11,12 @@ install:
 
 script:
   - coverage run -m unittest
-  
+
+deploy:
+  provider: pypi
+  username: "__token__"
+  secure:
+      password: EE+lULJ0GTGCov7IE8vmavLfaYgN3rVlmulq6ppghSvQa63TkO7pLk0M5Pzy+OV3nd9X071VqVJB4nx8GAbI+ttqzieZ+F7P1SVoeb+mGcwquPh7sNtCGWt+fuqIJSbiVC7DhMHq63/LJ9clYTHwD8ZqJ4IB9gHgJyX2jy7ltSpbNQTSJo9prki6W0WvDsL+jbbDeF0Jfe/VJ5TPMbOvnCRucCVQS9C+K/FOZqj40l85JZ83Fy0LI0qoX1qPTagEl+TxSD3MS5TYtqfQnHDAyfal6CLevoJWT2SNnhVKwz4UVUvMJIhHFwEBvEj0arx4+jPrW2snZj83hYamfrIlf1m4NllMFbvFD0hFbZeZfiaaBHdXyPpV7gdfDKxo1jOkvO1l03plUod9E5611m+5qqN6hjB1pz9YzQOBoEIJWs1Mf4Xx3Piw+W2bh4tMuTPzLWAQEPg3VAKCPf/JRf1mBJzQdst8Dqe3WHbNfvsdbObfaqGk9Xeh4MCkk54R+fuHEMRn1/lwzLblpCrUfDBZeML9n0GioDGmVNioOpt6FvER4ofiHCj8qV5Q8Ib7PW2iWbDX4DAXo4a3Y6/gnj0Z46tZvw/+bxxjLg2J3+gvgyfakS5fRvdGjcnrp+VQQEm4/iZ47T8kjpkNVaFWKjdrsgL0lytPP3uySoM/vMLR6ZI=
+
 notifications:
   email: false
