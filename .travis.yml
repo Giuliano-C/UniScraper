@@ -1,22 +1,17 @@
 language: python
-
 python:
-  - "3.6"
-  - "3.7"
-  - "3.8"
-
+- '3.6'
+- '3.7'
+- '3.8'
 install:
-  - pip install pipenv
-  - pipenv install --dev
-
+- pip install pipenv
+- pipenv install --dev
 script:
-  - coverage run -m unittest
-
+- coverage run -m unittest
 deploy:
   provider: pypi
-  username: "__token__"
+  username: __token__
   password:
-      secure: RdR9Bsb78VzD/nKDr3g1S3WfqT8AtEfMHDktUa11DZwndNuD7Kq1Zp59Nm1x5oQATuP7C8X79P+6rVPv14zRtzM4wnme4ig5+z9EQ2zHgUhSoT/mhBrvjGW3xqvJPQaw3Z73xf4J6V19pl+lbAEu36vD/Q6RLuBv/hi7CwQeSuBCOQ+6uEEn0TxQvGwJuWqSOfVIu9SAZFB3ZjgUi7aI2Y4jBX4FDrCMf75ERTViG9iMRHb4luTWz3O79c5CnMIKmhuKOPr2tAGBFXBWjiDnUHzaktWZLws5ukU9EPbZIeUZkvSQV+UeqN9Zai29J90Ysel405H8qLn0f2EX1t4qqmznnHfxGO96jryhhXRpqKUuLKhAyc7q5OZ76hCmBE8oFIZGeETyg0CjsnYWF0RTOvuwz/Cy8qxaRHbhjdlr40t+T97WwBb8/YEVwPjInGNV9nuiwyf6i8zjUSe670GaZ7oMw/XdnI/gktXdCp8H4aFUJF9tH44o76Rk3aVbqNNbMy6HdrnsKyO9ews53kTavDoZYMbAbMOEkhkN2xbQh1sHZM9xfSkbfR/BRmwJLPQ69wvVoFXldWnG9g7ITG5MTsyv/ugrSO5Zs0nalRHBaGPdtmIimH1QWfTJZPecSZ21575Kl0ECJ6C50qF2wRSuOHiBhPuK0XTUv5dT2h4GC7A=
-
+    secure: veITr1B11xxbGA0fRbzVWbJ4afjBrG5ip1Bg3usyTTJM0FfYh28ow9VWEfEIwusdil8ArMYMPu31yvjjUmXRqzTBTc66N0WvafVc6/RHU591Tm+Rh8r1LvN/nAalAwL8KNJUPS5KV4StJzvZ8Z5Op90BCTKMNIxJ1tEMs7yi8Xvmp22SJHDd5fePvEr4f+ZqhcOmg+Ycdy4ZN9avrv7RZkvWDjpaWYd6x6Afv3YttgWSzVmux9YjPwDM7DdntstFCKULXHk5GXDZXih2QjVjL7rrrGB8JqD4iD20UslDyQ3BOZHeGwRQp27qemM45BMQSoJijAEArVj0huA+z0XQlHIMNy3KdencMdhuy49//F/1d3tTtk5U6CQl8vWyq76WaWdHlFGi0ZAC+DZPVfX4c5epe2739+dswrIz2AwKutl4wlTyAfTeusuVk/vUM78dBMLpw5NyABTY2tm1+18ylH9a1nUrD7Ir9uAsnm/3/Tgc52t+7xi40E6z+CurpRKfnO3FULEuy0IB4VSo/nNbl33agSb2bk6Ikcduoi7Z56ZxYd2w/1eau+lqo3Vp1+np1e8Puu0V9TswW0wj9pkyV6IFKRgQ5Tdkf/4Cn3apktABorpPBKlKsepOi8EkaE3dzbuw2CKrborSwnXuqrCeIJ9WzEEtsujEA9iVuiOi3j4=
 notifications:
   email: false
