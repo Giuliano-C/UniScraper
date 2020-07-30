@@ -21,6 +21,7 @@ setup(
     description="Python package for scraping university information",
     keywords="python uni university scraper uni-scraper",
     long_description=README,
+    long_description_content_type='text/markdown',
     install_requires=[
         "beautifulsoup4>=4.9.0",
         "requests>=2.23.0",
