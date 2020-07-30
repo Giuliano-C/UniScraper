@@ -35,10 +35,10 @@ class AbstractScraper():
     def units(self):
         raise NotImplementedError("This should be implemented.")
 
-    def course_detail(self, course):
+    def course_detail(self, **kwargs):
         raise NotImplementedError("This should be implemented.")
 
-    def unit_detail(self, unit):
+    def unit_detail(self, **kwargs):
         raise NotImplementedError("This should be implemented.")
 
     def save_json(self, out_file=None):

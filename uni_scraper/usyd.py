@@ -64,7 +64,8 @@ class UniversityOfSydney(AbstractScraper):
         except Exception as e:
             raise e
 
-    def course_detail(self, course):
+    def course_detail(self, **kwargs):
+        course = kwargs.get('course', None)
         page = scrape_page("https://cusp.sydney.edu.au/students/view-degree-page/degree_id/%d" % course)
         course_detail = {}
         semesters = page.find(id='semesters')
@@ -180,7 +181,10 @@ class UniversityOfSydney(AbstractScraper):
     
         return course_detail
 
-    def unit_detail(self, name=None, link_id=None):
+    def unit_detail(self, **kwargs):
+        name = kwargs.get('name', None)
+        link_id = kwargs.get('link_id', None)
+
         unit_detail = {}
         try:
             link = "https://www.sydney.edu.au/units/%s" % name
