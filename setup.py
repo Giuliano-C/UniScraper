@@ -17,6 +17,7 @@ setup(
     url="https://github.com/Giuliano-C/UniScraper/",
     version=about['__version__'],
     author="Giuliano Celani",
+    author_email="giuliano_celani@hotmail.com",
     description="Python package for scraping university information",
     keywords="python uni university scraper uni-scraper",
     long_description=README,
