@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/Giuliano-C/UniScraper.svg?branch=master)](https://travis-ci.org/Giuliano-C/UniScraper)
+[![Version](https://img.shields.io/pypi/v/uni-scrapers.svg?)](https://pypi.org/project/uni-scrapers/)
+[![License](https://img.shields.io/github/license/Giuliano-C/UniScraper)](https://github.com/Giuliano-C/UniScraper/blob/master/LICENSE)
+
 # A simple web scraping tool for recipe sites.
 
 ```bash
