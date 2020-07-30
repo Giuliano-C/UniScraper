@@ -173,12 +173,8 @@ class UniversityOfSydney(AbstractScraper):
             elif "ft duration" in header:
                 course_detail["min_duration"] = int(re.match(r'\d+',content.text).group(0))
             elif "requirements" in header:
-                formatted_requirements = str(content).split("<br><br>")
-                formatted_requirements = [requirement.replace("<td>", "") for requirement in formatted_requirements]
-                formatted_requirements = [requirement.replace("</td>", "") for requirement in formatted_requirements]
-                formatted_requirements = [requirement.replace("</br>", "") for requirement in formatted_requirements]
-                course_detail["requirements"] = formatted_requirements
-    
+                course_detail["requirements"] = [requirement.strip() for requirement in re.findall(r"►(.*?)<br/>", str(content))]
+
         return course_detail
 
     def unit_detail(self, **kwargs):
