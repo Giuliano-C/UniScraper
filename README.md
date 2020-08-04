@@ -17,7 +17,7 @@ from uni_scrapers import available, load
 print(available())
 
 # Give the abbreviation as a string, from the list of available universities
-scraper = load('USYD)
+scraper = load('USYD')
 
 scraper.courses()
 scraper.units()

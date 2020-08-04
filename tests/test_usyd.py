@@ -1,5 +1,5 @@
 from tests import ScraperTest
-from uni_scraper import UniversityOfSydney
+from uni_scrapers import UniversityOfSydney
 
 class UniversityOfSydneyTest(ScraperTest):
 

@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 about = {}
 here = os.path.abspath(os.path.dirname(__file__))
 with open(
-    os.path.join(here, "uni_scraper", "__version__.py"), "r", encoding="utf-8"
+    os.path.join(here, "uni_scrapers", "__version__.py"), "r", encoding="utf-8"
 ) as f:
     exec(f.read(), about)
 
