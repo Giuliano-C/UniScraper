@@ -22,7 +22,7 @@ class UniversityOfSydneyTest(ScraperTest):
         self.assertTrue(type(units) == list)
 
     def test_course_detail(self):
-        course_detail = self.harvester_class.course_detail(course=454)
+        course_detail = self.harvester_class.course_detail(degree_id=454)
         self.assertTrue(type(course_detail) == dict)
         self.assertEqual(course_detail['cp_required'], 192)
         self.assertEqual(course_detail['min_duration'], 4)
@@ -33,10 +33,15 @@ class UniversityOfSydneyTest(ScraperTest):
         self.assertEqual(course_detail, "No details found")
 
     def test_unit_detail(self):
-        unit_detail = self.harvester_class.unit_detail(name='ENGG1111')
+        unit_detail = self.harvester_class.unit_detail(code='ENGG1111')
         self.assertTrue(type(unit_detail) == dict)
         self.assertEqual(unit_detail['code'], "ENGG1111")
         self.assertEqual(unit_detail['name'], "Integrated Engineering 1")
+
+        unit_detail = self.harvester_class.unit_detail(code='AERO1400')
+        self.assertTrue(type(unit_detail) == dict)
+        self.assertEqual(unit_detail['code'], "AERO1400")
+        self.assertEqual(unit_detail['name'], "Introduction to Aircraft Construction and Design")
 
         unit_detail = self.harvester_class.unit_detail()
         self.assertEqual(unit_detail, "No details found")
