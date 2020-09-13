@@ -30,8 +30,8 @@ jobs:
         pipenv install --dev
     - name: Lint with flake8
       run: |
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 . --count --exit-zero --ignore=F401,F403 --max-line-length=150 --statistics
+        pipenv run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        pipenv run flake8 . --count --exit-zero --ignore=F401,F403 --max-line-length=150 --statistics
     - name: Test with unittest
       run: |
-        python -m unittest -v
+        pipenv run python3 -m unittest -v
