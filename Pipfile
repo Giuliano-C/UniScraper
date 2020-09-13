@@ -6,9 +6,14 @@ verify_ssl = true
 [packages]
 beautifulsoup4 = "*"
 requests = "*"
-lxml = "*"
-tabulate = "*"
-coverage = "*"
+selenium = "*"
+webdriver-manager = "*"
 
 [requires]
 python_version = "3.7"
+
+[dev-packages]
+twine = "*"
+flake8 = "*"
+setuptools = "*"
+wheel = "*"
