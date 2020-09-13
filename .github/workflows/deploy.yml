@@ -4,8 +4,9 @@
 name: Deploy Package
 
 on:
-  release:
-    types: [created]
+  create:
+    tags:
+      - v*
 
 jobs:
   deploy:
