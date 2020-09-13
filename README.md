@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/giulianocelani/UniScraper.svg?branch=master)](https://travis-ci.org/giulianocelani/UniScraper)
-[![Version](https://img.shields.io/pypi/v/uni-scrapers.svg?)](https://pypi.org/project/uni-scrapers/)
+![Build Status](https://github.com/giulianocelani/UniScraper/workflows/Tests/badge.svg)
+[![Version](https://img.shields.io/pypi/v/university_scraper.svg?)](https://pypi.org/project/university_scraper/)
 [![License](https://img.shields.io/github/license/giulianocelani/UniScraper)](https://github.com/giulianocelani/UniScraper/blob/master/LICENSE)
 
 # A simple web scraping/crawler tool for university sites.
