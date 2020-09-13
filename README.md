@@ -1,11 +1,11 @@
 ![Build Status](https://github.com/giulianocelani/UniScraper/workflows/Tests/badge.svg)
 [![Version](https://img.shields.io/pypi/v/university_scraper.svg?)](https://pypi.org/project/university_scraper/)
-[![License](https://img.shields.io/github/license/giulianocelani/UniScraper)](https://github.com/giulianocelani/UniScraper/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/giulianocelani/university-scraper)](https://github.com/giulianocelani/university-scraper/blob/master/LICENSE)
 
 # A simple web scraping/crawler tool for university sites.
 
 ```bash
-pip install university_scraper
+pip install university-scraper
 ```
 
 then:
