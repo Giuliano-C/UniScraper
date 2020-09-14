@@ -14,7 +14,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="university_scraper",
-    url="https://github.com/giulianocelani/UniScraper/",
+    url="https://github.com/giulianocelani/university-scraper/",
     version=about['__version__'],
     author="Giuliano Celani",
     author_email="giuliano_celani@hotmail.com",
